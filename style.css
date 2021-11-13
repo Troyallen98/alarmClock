@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( #00b7ff, #ffffc7);
+    background-repeat: no-repeat;
+}
+img {
+    max-width: 150px;
+    height: auto;
+    margin: 20px;
+}
+.clock-one {
+    /*transform: rotate(345deg);*/
+    animation: clock-one 0.5s linear infinite;
+}
+
+.clock-two {
+    /*transform: rotate(15deg);*/
+    animation: clock-two 0.5s linear infinite;
+}
+
+@keyframes clock-one{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+@keyframes clock-two{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
